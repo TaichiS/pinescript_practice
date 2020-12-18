@@ -1,0 +1,27 @@
+//@version=4
+study("教學範例-alertcondition", overlay=true)
+
+sma20 = sma(close, 20)
+sma60 = sma(close, 60)
+
+h1 = plot(sma20, title="月線", color=color.green)
+h2 = plot(sma60, title="季線", color=color.blue)
+
+to_buy = crossover(sma20, sma60) // 黃金交叉
+to_sell = crossunder(sma20, sma60)  // 死亡交叉
+
+plotchar(to_buy, text="多", location=location.belowbar, textcolor=color.red)
+plotchar(to_sell, text="空", location=location.abovebar, textcolor=color.green)
+
+// buy 可能是空手買進多單（看多），也可能是空單平倉（結束看空）
+// sell 可能是空手進場放空（看空），也可能是多單平倉（結束看多）
+// long 代表接下來持有多單
+// short 代表接下來持有空單
+// close 多單平倉或空單回補，恢復空手
+
+alertcondition(to_buy, title="黃金交叉買進", message="金叉買進  {{close}} - {{time}}")
+alertcondition(to_sell, title="死亡交叉出場", message="死叉出場  {{close}} - {{time}}")
+
+
+
+
