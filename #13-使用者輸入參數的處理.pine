@@ -1,8 +1,13 @@
 //@version=4
 strategy("教學範例-使用者輸入參數的處理", overlay=true)  // 把 study 改成 strategy
 
-len20 = input(title = "慢速線", defval=20, minval=5, maxval=60, step=5)
-len60 = input(title = "快速線", defval=60, minval=10, maxval=120, step=5)
+//defval = default value
+//minval = min value
+//maxval = max value
+//step 每次跳多少
+
+len20 = input(title = "快速線", defval=20, minval=5, maxval=60, step=5)
+len60 = input(title = "慢速線", defval=60, minval=10, maxval=120, step=5)
 
 sma20 = sma(close, len20)
 sma60 = sma(close, len60)
