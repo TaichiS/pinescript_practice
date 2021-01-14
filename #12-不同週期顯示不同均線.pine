@@ -1,0 +1,16 @@
+//@version=4
+study("教學範例-不同週期顯示不同均線", overlay=true)  
+
+//時間周期。比如 '60' - 60分鐘, 'D' - 日, 'W' - 周, 'M' - 月, '5D' - 5日, '12M' - 1年, '3M' - 1季
+
+sma5 = timeframe.period=="240"  ? sma(close, 5)  :na
+sma10 = timeframe.period=="240" or timeframe.period=="D" ? sma(close, 10) :na
+sma15 = timeframe.period=="240" or timeframe.period=="60" ? sma(close, 15) :na
+
+sma20 = timeframe.period=="60" ? sma(close, 20) :na
+
+
+plot(sma5, title="ma5", color=color.blue)
+plot(sma10, title="ma10", color=color.green)
+plot(sma15, title="ma15", color=color.red)
+plot(sma20, title="ma20", color=color.purple)
