@@ -1,0 +1,20 @@
+//@version=4
+strategy("教學範例-使用者輸入參數的處理", overlay=true)  // 把 study 改成 strategy
+
+len20 = input(title = "慢速線", defval=20, minval=5, maxval=60, step=5)
+len60 = input(title = "快速線", defval=60, minval=10, maxval=120, step=5)
+
+sma20 = sma(close, len20)
+sma60 = sma(close, len60)
+
+plot(sma20, title="快速線", color=color.green)
+plot(sma60, title="慢速線", color=color.blue)
+
+to_long = crossover(sma20, sma60)   // 黃金交叉
+to_close = crossunder(sma20, sma60) // 死亡交叉
+
+//plotchar(to_long, char="B", text="買", color=color.red, location=location.belowbar)
+//plotchar(to_close, char="S", text="賣", color=color.green, location=location.abovebar)
+
+strategy.entry("golden", strategy.long, qty=1000, when=to_long)
+strategy.close("golden", qty=1000, when=to_close)
