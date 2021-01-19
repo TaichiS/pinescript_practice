@@ -17,3 +17,29 @@ https://tw.tradingview.com/gopro/?share_your_love=taichis
 一般 TradingView 在每年11月底感恩節都會有大幅折扣，如需購買付費帳號，建議盡可能於那個時間入手。
 
 
+1.基本介面  https://www.youtube.com/watch?v=Dg_TyT9eT8c
+2.互動式圖表 https://www.youtube.com/watch?v=zTKW2GqRJqk
+3.指標模版與模擬交易 https://www.youtube.com/watch?v=mm0iP0lGPOM
+4.PineScript入門-均線繪製 https://www.youtube.com/watch?v=GP7ocLZcWOg
+5.PineScript-變色均線 https://www.youtube.com/watch?v=CBNw0nTQ7YE
+6.PineScript-畫線的各種參數 https://www.youtube.com/watch?v=mz8sffhEysw
+7.比特幣長線突破預測法-因為有趣所以介紹 https://www.youtube.com/watch?v=cBhhjtO7PGw
+8.PineScript-黃金與死亡交叉、標註文字  https://www.youtube.com/watch?v=9oOtuLQHlNg
+9.PineScript-區塊填色與三元運算子  https://www.youtube.com/watch?v=CV-yY9vZ2-g
+10.PineScript-快訊通知的程式寫法與設定  https://www.youtube.com/watch?v=I_RWKQ94GA0
+11.PineScript-策略測試器-如何回測你的策略 https://www.youtube.com/watch?v=7NOJQZsg-Uk
+12.PineScript-Q&A-如何翻亞當、如何在不同週期顯示不同內容  https://www.youtube.com/watch?v=x-nmtcc_yXE
+13.PineScript-使用者輸入參數的處理 https://www.youtube.com/watch?v=RV35c-eT2Ug
+14.PineScript-布林通道的指標與策略
+15.比較兩個不同的商品
+16.PineScript-扣抵標示、plotshape用法
+17.PineScript-RSI的寫法
+18.PineScript-KD的寫法
+19.PineScript-取用其他週期的數據
+20.PineScript-取用其他網站的數據
+
+
+
+
+
+
