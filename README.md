@@ -15,7 +15,8 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 # 註冊帳號推薦連結
 
 如果你還沒註冊 TradingView，歡迎使用我下面的連結註冊帳號，那麼你跟我都能獲得30美金的折扣：
-https://tw.tradingview.com/gopro/?share_your_love=taichis
+
+* https://tw.tradingview.com/gopro/?share_your_love=taichis
 
 一般 TradingView 在每年11月底感恩節都會有大幅折扣，如需購買付費帳號，建議盡可能於那個時間入手。
 
