@@ -8,8 +8,8 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 
 # 呼叫程式碼說明書的方法
 
-如果你用 PC，可以使用 Ctrl-Click
-如果你用MAC，可以使用 Cmd-Click
+* 如果你用 PC，可以使用 Ctrl-Click
+* 如果你用MAC，可以使用 Cmd-Click
 叫出程式碼的使用說明書。
 
 # 註冊帳號推薦連結
