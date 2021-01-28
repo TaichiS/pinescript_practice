@@ -35,7 +35,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 11. PineScript-策略測試器-如何回測你的策略 https://www.youtube.com/watch?v=7NOJQZsg-Uk
 12. PineScript-Q&A-如何翻亞當、如何在不同週期顯示不同內容  https://www.youtube.com/watch?v=x-nmtcc_yXE
 13. PineScript-使用者輸入參數的處理 https://www.youtube.com/watch?v=RV35c-eT2Ug
-14. PineScript-布林通道的指標與策略
+14. PineScript-布林通道的指標與策略 https://youtu.be/tbdxwGlFnxA
 15. 比較兩個不同的商品、儲存圖表
 16. PineScript-扣抵標示、plotshape用法
 17. PineScript-RSI的寫法
