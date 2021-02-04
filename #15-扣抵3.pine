@@ -10,6 +10,12 @@ close1 = close[x]
 close2 = close[y]
 close3 = close[z]
 
+//label.new(x, y, text, xloc, yloc, color, style, textcolor, size, textalign, tooltip) → series[label]
+//yloc=yloc.belowbar 或 yloc.abovebar
+//style=label.style_labeldown 或 label.style_labelup
+//tostring(x) 可以把本來是「數字」的x轉換成「字串」
+
+
 l1 = label.new(bar_index-x, na, tostring(x)+'MA '+tostring(close[x]), 
   color=color.orange, 
   textcolor=color.white,
