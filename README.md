@@ -36,7 +36,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 12. PineScript-Q&A-如何翻亞當、如何在不同週期顯示不同內容  https://www.youtube.com/watch?v=x-nmtcc_yXE
 13. PineScript-使用者輸入參數的處理 https://www.youtube.com/watch?v=RV35c-eT2Ug
 14. PineScript-布林通道的指標與策略 https://youtu.be/tbdxwGlFnxA
-15. PineScript-扣抵標示、label用法
+15. PineScript-扣抵標示、label用法 https://youtu.be/krk9D1Phs2w
 16. 比較兩個不同的商品、儲存圖表
 17. PineScript-RSI的寫法
 18. PineScript-KD的寫法
