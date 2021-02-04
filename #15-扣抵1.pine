@@ -1,0 +1,4 @@
+//@version=4
+study("扣抵草稿",overlay=true)
+
+plotchar(barstate.islast, char="", text="20", location=location.belowbar, textcolor=color.red,size=size.small,offset=-20)
