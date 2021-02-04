@@ -1,0 +1,12 @@
+//@version=4
+
+study("Deduct扣抵",overlay=true)
+x = input(20, title="20ma")
+
+l = label.new(bar_index-x, na, text="20ma", 
+  color=color.orange, 
+  textcolor=color.white,
+  style=label.style_labelup, 
+  yloc=yloc.belowbar
+  )
+label.delete(l[1])
