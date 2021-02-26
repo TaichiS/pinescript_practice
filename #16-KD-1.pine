@@ -1,0 +1,15 @@
+//@version=4
+study(title="KD指標", shorttitle="KD", overlay=false)
+
+Length = 9
+DLength = 3
+
+vFast = stoch(close, high, low, Length)     // KD的快線
+vSlow = sma(vFast, DLength)                 // KD的慢線
+vSlow2 = sma(vSlow, DLength)                // KD再平滑一次
+
+K = vSlow
+D = vSlow2
+
+plot(K, color=color.blue, title="K")              
+plot(D, color=color.red, title="D")       
