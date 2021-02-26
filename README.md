@@ -37,12 +37,14 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 13. PineScript-使用者輸入參數的處理 https://www.youtube.com/watch?v=RV35c-eT2Ug
 14. PineScript-布林通道的指標與策略 https://youtu.be/tbdxwGlFnxA
 15. PineScript-扣抵標示、label用法 https://youtu.be/krk9D1Phs2w
-16. 比較兩個不同的商品、儲存圖表
-17. PineScript-RSI的寫法
-18. PineScript-KD的寫法
-19. PineScript-取用其他週期的數據
-20. PineScript-取用其他網站的數據
-21. 指標介紹
+16. PineScript-震盪指標三兄弟RSI、KD、MACD，並且深入介紹KD的程式寫法 https://youtu.be/Z86o963W6LU
+
+
+暫定話題
+
+PineScript-取用其他週期的數據
+PineScript-取用其他網站的數據
+獵奇指標介紹
 
 
 
