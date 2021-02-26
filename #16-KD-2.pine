@@ -1,0 +1,33 @@
+//@version=4
+study(title="KD指標", shorttitle="KD", overlay=false)
+
+
+// 以下參數本來是開放輸入的，但為了避免畫面凌亂，先用預設值代替，不開放輸入。
+
+// 先處理KD指標的數值，決定超買超賣區
+//Length = input(9, minval=1)     // KD參數
+Length = 9
+//DLength = input(3, minval=1)    // KD參數
+DLength = 3
+// UpBand = input(20, minval=1)    // 20是超賣區
+UpBand = 20
+//DownBand = input(80, minval=1)  // 80是超買區
+DownBand = 80
+
+vFast = stoch(close, high, low, Length)     // KD的快線
+vSlow = sma(vFast, DLength)                 // KD的慢線
+vSlow2 = sma(vSlow, DLength)                // KD再平滑一次
+
+K = vSlow
+D = vSlow2
+
+plot(K, color=color.blue, title="K")              
+plot(D, color=color.red, title="D")   
+
+
+// linestyle的選項：
+// hline.style_solid（實線）、hline.style_dotted（點線）、hline.style_dashed（虛線）。
+hline(50, color=color.black, linestyle=hline.style_dashed)  // 在KD中央50處畫出虛線
+h1 = hline(UpBand, color=color.red, linestyle=hline.style_dotted)  // 在KD下方20處畫出紅線（點線）
+h2 = hline(DownBand, color=color.green, linestyle=hline.style_dotted)  // 在KD上方80處畫出綠線（點線）
+fill(h1, h2)
