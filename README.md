@@ -47,6 +47,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 * 如何找高低點
 * 如何畫線
 * PineScript-取用其他網站的數據
+* 股票篩選器
 * 獵奇指標介紹
 
 歡迎在影片留言中提供課程建議。
