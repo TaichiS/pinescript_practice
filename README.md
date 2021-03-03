@@ -48,6 +48,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 * 如何畫線
 * PineScript-取用其他網站的數據
 * 股票篩選器
+* 指示牌、價格注釋、螢光筆、增加板塊、同時換色
 * 獵奇指標介紹
 
 歡迎在影片留言中提供課程建議。
