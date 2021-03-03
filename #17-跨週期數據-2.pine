@@ -1,0 +1,19 @@
+//@version=4
+study("60K均線", overlay=true)
+
+// 時間週期參數允許值為：
+// 1S, 5S, 15S, 30S - 秒間隔(圖表時間週期應小於或等於請求的時間週期)
+// 從1到1440分鐘
+// 從1D到365D 幾天
+// 從1W到52W  幾週
+// 從1M到12M  幾個月
+
+ma20 = sma(close, 20)
+ma60 = sma(close, 60)
+
+
+// style_line 會把線連起來，但 style_circles 不會把線連起來
+// 那4小時的均線怎麼寫？
+plot(security(syminfo.tickerid, "60", ma20), color= color.green , style=plot.style_line)
+plot(security(syminfo.tickerid, "60", ma60), color = color.blue , style=plot.style_line)
+
