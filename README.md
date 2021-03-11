@@ -38,7 +38,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 14. PineScript-布林通道的指標與策略 https://youtu.be/tbdxwGlFnxA
 15. PineScript-扣抵標示、label用法 https://youtu.be/krk9D1Phs2w
 16. PineScript-震盪指標三兄弟RSI、KD、MACD，並且深入介紹KD的程式寫法 https://youtu.be/Z86o963W6LU
-17. PineScript-跨週期數據的取用，強大的security介紹 https://youtu.be/pgT39m9m8oQ
+17. PineScript-跨週期數據的取用，強大的security介紹 https://youtu.be/_IebIwZkJeI
 
 
 預定課程
