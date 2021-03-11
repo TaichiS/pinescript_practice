@@ -44,6 +44,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 預定課程
 
 * 成交量柱狀圖的設計
+* 再討論 if else
 * 如何找高低點
 * 如何畫線
 * PineScript-取用其他網站的數據
