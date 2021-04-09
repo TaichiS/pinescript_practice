@@ -22,10 +22,9 @@ my_increase = (close*10000 - close[21]*10000)/close[21]*100
 // 大盤的漲幅計算
 mkt_increase = (mkt_close*10000 - mkt_close[21]*10000)/mkt_close[21]*100
 
-RS = my_increase / mkt_increase
 
 l1 = plot(my_increase)
 l2 = plot(mkt_increase, color=color.red)
 
-hline(0)
-fill(l1, l2, color=my_increase>=mkt_increase ? color.red : color.white)
+hline(0)  // 在零的位置畫一條水平虛線
+fill(l1, l2, color=my_increase>=mkt_increase ? color.red : color.white)  // 填入色塊
