@@ -1,9 +1,6 @@
 //@version=4
 study("RS指標", overlay=false)
 
-// 講這個
-// https://www.tradingview.com/pine-script-docs/en/v4/language/Line_wrapping.html
-
 // 相對強弱勢(Relative Strength,RS)指標
 
 // 根據網路上看到的定義，所謂的相對強弱指標(Relative Strength,RS)就是去比較兩個主體之間的在某段時間的相對強弱，
@@ -19,7 +16,7 @@ study("RS指標", overlay=false)
 mkt_close = security("TWSE:TAIEX", "D", close)
 
 
-// 自己的漲幅計算
+// 目前個股的漲幅計算
 my_increase = (close*10000 - close[21]*10000)/close[21]*100
 
 // 大盤的漲幅計算
@@ -32,4 +29,3 @@ l2 = plot(mkt_increase, color=color.red)
 
 hline(0)
 fill(l1, l2, color=my_increase>=mkt_increase ? color.red : color.white)
-
