@@ -40,6 +40,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 16. PineScript-震盪指標三兄弟RSI、KD、MACD，並且深入介紹KD的程式寫法 https://youtu.be/Z86o963W6LU
 17. PineScript-跨週期數據的取用，強大的security介紹 https://youtu.be/_IebIwZkJeI
 18. PineScript-跨商品數據的取用&RS指標，強大的security介紹 https://youtu.be/12iLMyDIaaw
+19. PineScript-自行繪製K棒與調整物件樹的方法 https://youtu.be/uen6GY1APM4
 
 
 預定課程
