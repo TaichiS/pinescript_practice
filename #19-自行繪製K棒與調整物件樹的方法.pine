@@ -1,0 +1,15 @@
+//@version=4
+study("課程-自行繪製K棒與調整物件樹的方法", overlay=true)
+
+condition = low > sma(close,20)
+
+// 學習重點
+// 1.自行繪製K棒的方法
+// 2.物件數
+// 3.移動指標到任意窗格
+// 4.K棒變更任意顏色
+// 5.k棒變更任意高度
+// 6.K棒可顯示或不顯示
+
+plotcandle(condition?open:na, high, low, close, title="kbar", color=close>open? color.blue :color.yellow)
+
