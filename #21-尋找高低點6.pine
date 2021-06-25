@@ -1,0 +1,52 @@
+//@version=4
+study("教學：尋找高低點6完成版", overlay=true)
+
+// 尋找高低點6：移除多餘的高低點
+// **持續變數的使用**  本堂課非常重要
+// 藉由記錄上一次出現高點與低點的地方，判斷目前的高低點是不是有重複
+   
+barnum = input(title="左右K棒數", defval=4, type=input.integer, minval=2)
+
+// 此處的變數將持續使用
+var timeHigh=bar_index  // 最近一次高點的K棒號碼
+var timeLow=bar_index   // 最近一次低點的K棒號碼
+var lastHigh=0.0        // 最近一次高點的高點
+var lastLow=high*100    // 最近一次低點的低點
+
+
+//cond = high[barnum] == highest(high, barnum*2+1) 
+cond = high[barnum] == highest(high, barnum*2+1) and (timeHigh<timeLow or high[barnum]>lastHigh)
+cond2= low[barnum]  == lowest(low, barnum*2+1) and (timeLow<timeHigh or low[barnum]<lastLow)
+
+
+if cond 
+    HigherThanLastHigh = timeHigh>timeLow and high[barnum]>lastHigh
+    timeHigh:=bar_index-barnum
+    lastHigh:=high[barnum]
+    lineh = line.new(x1=timeLow, y1=lastLow, 
+             x2=timeHigh, y2=lastHigh, 
+             xloc=xloc.bar_index, color=color.orange, width=2)
+    labelh = label.new(x=bar_index-barnum, y=na, text=tostring(lastHigh), 
+             size=size.tiny, color=#EEEEEE, textcolor=color.red, 
+             yloc=yloc.abovebar, style=label.style_label_down
+             )
+    if HigherThanLastHigh
+        label.delete(labelh[1]) 
+        line.delete(lineh[1])
+    
+    
+  
+if cond2
+    LowerThanLastLow = timeLow>timeHigh and low[barnum]<lastLow
+    timeLow:=bar_index-barnum
+    lastLow:=low[barnum]
+    linel = line.new(x1=timeHigh, y1=lastHigh, 
+             x2=timeLow, y2=lastLow, 
+             xloc=xloc.bar_index, color=color.teal, width=2)
+    lablel = label.new(x=bar_index-barnum, y=na, text=tostring(lastLow), 
+             size=size.tiny, color=#EEEEEE, textcolor=color.green, 
+             yloc=yloc.belowbar, style=label.style_label_up
+             )
+    if LowerThanLastLow
+        label.delete(lablel[1])
+        line.delete(linel[1])
