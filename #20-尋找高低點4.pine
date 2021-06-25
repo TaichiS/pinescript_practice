@@ -1,0 +1,24 @@
+//@version=4
+study("教學：尋找高低點4", overlay=true)
+
+// 尋找高低點4：完善前一個程式，除了顯示高點，也顯示低點
+// highest、lowest的使用，但是讓使用者可以自行變更初始值，再加上低點顯示
+
+barnum = input(title="左右K棒數", defval=4, type=input.integer, minval=2)
+cond = high[barnum] == highest(high, barnum*2+1)
+cond2= low[barnum]  == lowest(low, barnum*2+1)
+
+//plotchar(cond, char="*", text="H", location=location.abovebar, offset=-barnum)  
+//plotchar(cond2, char="*", text="L", location=location.belowbar, offset=-barnum) 
+
+
+if cond
+    labelh = label.new(x=bar_index-barnum, y=na, text="H", 
+             size=size.normal, color=#EEEEEE, textcolor=color.red, yloc=yloc.abovebar, 
+             style=label.style_label_down
+             )
+
+if cond2
+    lablel = label.new(x=bar_index-barnum, y=na, text="L", 
+             size=size.normal, color=#EEEEEE, textcolor=color.green, yloc=yloc.belowbar, style=label.style_label_up
+             )
