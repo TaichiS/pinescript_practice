@@ -1,0 +1,16 @@
+//@version=4
+study("教學：尋找高低點3", overlay=true)
+
+// 尋找高低點3：調整成可隨意變更初始數值
+// highest、lowest的使用，但是讓使用者可以自行變更初始值
+
+barnum = input(title="左右K棒數", defval=4, type=input.integer, minval=2)
+cond = high[barnum] == highest(high, barnum*2+1)
+
+//plotchar(cond, char="*", text="H", offset=-barnum)  // 在當前這根確認條件，則最高點必須往前4根
+
+if cond
+    labelh = label.new(x=bar_index-barnum, y=na, text="H", 
+             size=size.normal, color=#EEEEEE, textcolor=color.red, yloc=yloc.abovebar, 
+             style=label.style_label_down
+             )
