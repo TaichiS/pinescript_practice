@@ -1,0 +1,15 @@
+//@version=4
+study("教學：尋找高低點1", overlay=true)
+
+// 尋找高低點1：基本概念
+// 容易理解，但笨拙，程式容易變得冗長且不易修改
+
+// 一行切成兩行或多行，請記得必須內縮，且內縮空格不可以是4的倍數
+// 只有函數才能使用4的倍數的內縮空格
+cond = high[4] > high[0] and high[4] > high[1] and 
+       high[4] > high[2] and high[4] > high[3] and
+       high[4] > high[5] and high[4] > high[6] and 
+       high[4] > high[7] and high[4] > high[8] 
+
+// 0, 1, 2, 3, 4*, 5, 6, 7, 8
+plotchar(cond, char="*", text="H", offset=-4)  // 在當前這根確認條件，則最高點必須往前4根
