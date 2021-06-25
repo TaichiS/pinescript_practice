@@ -1,0 +1,10 @@
+//@version=4
+study("教學：尋找高低點2", overlay=true)
+
+// 尋找高低點2：利用函式簡化程式
+// highest、lowest的使用
+
+cond = high[4] == highest(high, 9)
+
+// 0, 1, 2, 3, 4*, 5, 6, 7, 8
+plotchar(cond, char="*", text="H", offset=-4)  // 在當前這根確認條件，則最高點必須往前4根
