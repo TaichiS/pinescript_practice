@@ -23,8 +23,8 @@ if cond
     lastHigh:=high[barnum]
     lineh = line.new(x1=timeLow, y1=lastLow, 
              x2=timeHigh, y2=lastHigh, 
-             xloc=xloc.bar_index, color=color.orange, width=2)
-    labelh = label.new(x=bar_index-barnum, y=high[barnum]-5, text="H", 
+             color=color.orange, width=2)
+    labelh = label.new(x=bar_index-barnum, y=na, text="H", 
              size=size.normal, color=#EEEEEE, textcolor=color.red, 
              yloc=yloc.abovebar, style=label.style_label_down
              )
