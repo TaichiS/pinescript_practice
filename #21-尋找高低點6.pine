@@ -25,7 +25,7 @@ if cond
     lastHigh:=high[barnum]
     lineh = line.new(x1=timeLow, y1=lastLow, 
              x2=timeHigh, y2=lastHigh, 
-             xloc=xloc.bar_index, color=color.orange, width=2)
+             color=color.orange, width=2)
     labelh = label.new(x=bar_index-barnum, y=na, text=tostring(lastHigh), 
              size=size.tiny, color=#EEEEEE, textcolor=color.red, 
              yloc=yloc.abovebar, style=label.style_label_down
@@ -42,7 +42,7 @@ if cond2
     lastLow:=low[barnum]
     linel = line.new(x1=timeHigh, y1=lastHigh, 
              x2=timeLow, y2=lastLow, 
-             xloc=xloc.bar_index, color=color.teal, width=2)
+             color=color.teal, width=2)
     lablel = label.new(x=bar_index-barnum, y=na, text=tostring(lastLow), 
              size=size.tiny, color=#EEEEEE, textcolor=color.green, 
              yloc=yloc.belowbar, style=label.style_label_up
