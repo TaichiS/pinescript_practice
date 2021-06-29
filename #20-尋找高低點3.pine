@@ -9,6 +9,7 @@ cond = high[barnum] == highest(high, barnum*2+1)
 
 //plotchar(cond, char="*", text="H", offset=-barnum)  // 在當前這根確認條件，則最高點必須往前4根
 
+// 這裡是 if 敘述，所以在 if 包裹起來下面幾行，都要使用4個空白（或其倍數）進行縮排
 if cond
     labelh = label.new(x=bar_index-barnum, y=na, text="H", 
              size=size.normal, color=#EEEEEE, textcolor=color.red, yloc=yloc.abovebar, 
