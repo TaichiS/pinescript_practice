@@ -1,0 +1,7 @@
+//@version=4
+study("教學-畫垂直線2-使用line", overlay=true)
+
+LineLength = input(defval=10000, title="縱線長度")
+
+if time == timestamp("America/New_York", year,month,dayofmonth,9,30,0) 
+    line.new(bar_index, low-LineLength, bar_index, high+LineLength, color=color.new(color.gray, transp=70), width=3)
