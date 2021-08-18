@@ -1,0 +1,26 @@
+//@version=4
+study("教學-時間變數解說",overlay=false)
+
+// 時間的表示方式是 UNIX time 格式（又稱POSIX時間），也就是從
+// UTC 1970年1月1日0時0分0秒起至現在的總秒數，不考慮閏秒。
+
+// time 本根K棒開盤的時間，是一個整數，精度到1/1000秒
+// timenow  現在的時間
+
+// timestamp(year,month,dayofmonth,0,0) 可以轉換年月日時分秒變成 UNIX time
+// timestamp("GMT+8", year,month,dayofmonth,0,0) 可以轉換年月日時分秒變成 UNIX time，但加上時區
+
+
+// dayofweek 當週的第幾天
+// dayofmonth  當月的第幾天 
+// weekofyear 當年的第幾週，注意1月1日不一定是第1週，可能是前一年的第53週，要看是星期幾
+
+// year 年，比如現在是 2021
+// month 月
+// 日，使用 dayofmonth
+// minute 分鐘、second 秒 一般場景不會用到
+
+
+plot(timestamp(year,month,dayofmonth,0,0,0))
+//plot(timestamp("GMT+8", year,month,dayofmonth,minute,second))
+
