@@ -43,6 +43,7 @@ https://www.youtube.com/channel/UCIii8L5wtZsyVgYlbkLuH4A
 19. PineScript-自行繪製K棒與調整物件樹的方法 https://youtu.be/uen6GY1APM4
 20. PineScript-尋找高低點-Zig Zag（上）https://youtu.be/YqUiGYfgm8Q
 21. PineScript-尋找高低點-Zig Zag（下）持續變數與繪製直線 https://youtu.be/Ppa_KnyZsEA
+22. PineScript-成交量繪圖、縱線繪圖、時間處理 
 
 
 預定課程
