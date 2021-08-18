@@ -1,0 +1,24 @@
+//@version=4
+study("教學-畫垂直線1", overlay=true, scale=scale.none)
+
+
+// 畫出成交量的直方圖
+plot(volume,color=color.gray,linewidth=1,style=plot.style_histogram)
+
+// 畫出從0到10000000000的直方圖，10e10表示10的10次方
+//plot(10e10,color=color.gray,linewidth=3,style=plot.style_histogram)
+
+// 在指定的時間繪製垂直線，只會畫一條，不符合的時間則為na
+//plot((time == timestamp(2021,08,17,0,0)) ? 10e20 : na, 
+//      color = color.red, linewidth = 3, title = "指定時間", style = plot.style_histogram)
+
+// 每天早上9點的K棒畫出垂直線，可標示出台股開盤的K棒，以下寫法即將過期（透明度要跟顏色組在一起）
+//plot(time == timestamp("GMT+8", year,month,dayofmonth,9,0,0) ? 10e20 : na, 
+//      color = color.gray, transp=50, linewidth = 3, title = "台股九點", style = plot.style_histogram)
+
+// 美股開盤時間為美東時區GMT-5的早上9:30，以下寫法是目前較正確的作法（透明度與顏色組成color物件）
+// 留意此圖在1小時K以上不可見
+//plot(time == timestamp("America/New_York", year,month,dayofmonth,9,30,0) ? 10e20 : na, 
+//      color = color.new(color.gray, transp=80), linewidth = 3, title = "美股9:30", style = plot.style_histogram)
+ 
+ 
